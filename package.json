@@ -1,0 +1,26 @@
+{
+  "name": "sdm2019-ass1b",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nanoix9/sdm2019-ass1b.git"
+  },
+  "author": "Stone Fang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nanoix9/sdm2019-ass1b/issues"
+  },
+  "homepage": "https://github.com/nanoix9/sdm2019-ass1b#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
