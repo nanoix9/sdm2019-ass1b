@@ -42,6 +42,8 @@
 
 7. Mocha and Chai
 
+    screenshot: ![mocha-chai](img/mocha-chai.png)
+    
 > 8. You have setup Heroku to deploy your production code from GitHub to the cloud.
 > 9. Optional: set up Cucumber (or similar) for automated acceptance testing.
 > 10. Optional: use Containers for your development and production.
