@@ -1,13 +1,12 @@
 const config = {
-  development: {
-      MONGO_URI: "mongodb://localhost",
-      MONGO_DB: 'test',
-      MONGO_OPTIONS: { "db": { "safe": true } }
+  dev: {
+      MONGO_URI: "mongodb://localhost/test",
   },
-  production: {
-      MONGO_URI: "mongodb://localhost",
-      MONGO_DB: 'production',
-      MONGO_OPTIONS: { "db": { "safe": true } }
+  prod: {
+      MONGO_URI: "mongodb://localhost/production",
+  },
+  heroku: {
+    MONGO_URI: process.env.MONGODB_URI,
   }
 };
 

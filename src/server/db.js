@@ -1,4 +1,4 @@
-const config = require('../../config/config.js')[process.env.NODE_ENV || 'development'];
+const config = require('../../config/config.js')[process.env.NODE_ENV || 'dev'];
 
 const MongoClient = require('mongodb').MongoClient
 
