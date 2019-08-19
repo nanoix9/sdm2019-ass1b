@@ -50,6 +50,12 @@
 
     screenshot: ![heroku-deploy](img/heroku-deploy.png)
 
-> 9. Optional: set up Cucumber (or similar) for automated acceptance testing.
-> 10. Optional: use Containers for your development and production.
-> 11. Optional: use Datadog (or similar) to monitor (log) the behaviour of the application after deployment
+9. Cucumber for automated acceptance testing.
+
+    screenshot: ![cucumber](img/cucumber.png)
+
+10. Containers 
+
+    not finish
+
+11. use Datadog to monitor (log) the behaviour of the application after deployment
