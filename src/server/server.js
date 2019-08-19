@@ -3,7 +3,6 @@ const path = require('path');
 const db = require('./db.js');
 
 const app = express()
-const port = 3000
 
 const res_path = path.join(path.dirname(path.dirname(__dirname)), 'dist', 'frontend');
 
