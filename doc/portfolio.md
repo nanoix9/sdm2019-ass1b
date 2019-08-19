@@ -1,61 +1,143 @@
-# Evidences
-
-1. VS Code, Git repo on own machine
-
-    screenshot: ![VS Code & Git](img/vscode-git.png)
-
-2. GitHub repository
-
-    link: <https://github.com/nanoix9/sdm2019-ass1b>
+---
+title: INFS809 SDM Assignment 1B Evidences
+header-includes: |
+    \usepackage{fancyhdr}
+    \pagestyle{fancy}
+    \fancyhead[L]{INFS809 SDM Assignment 1B}
+    \fancyfoot[L]{Name: Stone Fang, Student ID: 19049045}
     
-    screenshot: ![](img/github.png)
+papersize: a4
+mainfont: Arial
+fontsize: 11pt
+linestretch: 1
+geometry:
+    - margin=25mm
+---
 
-3. Gitflow branching configuration
 
-    link: <https://github.com/nanoix9/sdm2019-ass1b/branches/all>
+# VS Code, Git repo on own machine
 
-    screenshot: ![](img/gitflow.png)
+screenshot of VS code and local git repo: 
 
-4. pull request function of GitHub
+![VS Code & Git](img/vscode-git.png)
 
-    link:
+# GitHub repository
 
-    - <https://github.com/nanoix9/sdm2019-ass1b/pulls?q=is%3Apr+is%3Aclosed>
-    - <https://github.com/nanoix9/sdm2019-ass1b/pull/1>
+link: <https://github.com/nanoix9/sdm2019-ass1b>
 
-    screenshots:
+screenshot: 
 
-    succeeded: ![succeeded](img/pullrequest.png)
+![](img/github.png)
 
-    rejected: ![rejected](img/pullrequest-rejected.png)
+# Gitflow branching configuration
 
-5. TravisCI
+Git flow makes use of several branch naming conventions: master, develop, feature, hotfix, release.
 
-    link: <https://github.com/nanoix9/sdm2019-ass1b/blob/master/.travis.yml>
+link: <https://github.com/nanoix9/sdm2019-ass1b/branches/all>
 
-6. node.js, React, express.js and MongoDB
+screenshot: 
 
-    - node.js: <https://github.com/nanoix9/sdm2019-ass1b/blob/master/package.json>
-    - react: <>
-    - express: <https://github.com/nanoix9/sdm2019-ass1b/blob/master/src/index.js>
-    - mongodb: <>
+![](img/gitflow.png)
 
-7. Mocha and Chai
+# pull request function of GitHub
 
-    screenshot: ![mocha-chai](img/mocha-chai.png)
+link:
+
+- <https://github.com/nanoix9/sdm2019-ass1b/pulls?q=is%3Apr+is%3Aclosed>
+- <https://github.com/nanoix9/sdm2019-ass1b/pull/1>
+
+screenshots:
+
+succeeded: 
+
+![succeeded](img/pullrequest.png)
+
+rejected: 
+
+![rejected](img/pullrequest-rejected.png)
+
+# TravisCI
+
+To enable TravisCI, developer should put a .travis.yml in github repo and connect travis-ci.com with github account.
+
+link: <https://github.com/nanoix9/sdm2019-ass1b/blob/master/.travis.yml>
+
+screenshot of one TravisCI job details:
+
+![travis-ci-job](img/travis-ci-job.png)
+
+# Node.js, React, express.js and MongoDB
+
+create an application that show a simple table. To start the application, run `npm start`
+
+- node.js: <https://github.com/nanoix9/sdm2019-ass1b/blob/master/package.json>
+- react: <https://github.com/nanoix9/sdm2019-ass1b/blob/master/src/app/app.jsx>
+- express: <https://github.com/nanoix9/sdm2019-ass1b/blob/master/src/index.js>
+- mongodb: <https://github.com/nanoix9/sdm2019-ass1b/blob/master/src/server/db.js>
+
+screenshot of source code:
+
+![web-app](img/web-app.png)
+
+web page:
+
+![webpage](img/webpage.png)
+
+# Mocha and Chai
+
+Mocha is a unit test framework and Chai is an assertion library
+
+command:
+
+    npx mocha
+
+link: <https://github.com/nanoix9/sdm2019-ass1b/blob/master/test/test.js>
+
+screenshot: 
+
+![mocha-chai](img/mocha-chai.png)
     
-8. Heroku to deploy your production code
-    
-    link: <https://lit-beyond-33040.herokuapp.com>
+# Deployment to Heroku
 
-    screenshot: ![heroku-deploy](img/heroku-deploy.png)
+Heroku is a cloud platform to host web applications
 
-9. Cucumber for automated acceptance testing.
+command:
 
-    screenshot: ![cucumber](img/cucumber.png)
+    heroku create
+    git push heroku develop:master
 
-10. Containers 
+link: <https://lit-beyond-33040.herokuapp.com>
 
-    not finish
+screenshot: 
 
-11. use Datadog to monitor (log) the behaviour of the application after deployment
+![heroku-deploy](img/heroku-deploy.png)
+
+# Cucumber
+
+Cucumber is a tool to write test in natural language, which usually contains three kind of files: feature file, world file, and steps file.
+
+command:
+
+    npx cucumber-js
+
+code link: <https://github.com/nanoix9/sdm2019-ass1b/tree/master/features>
+
+screenshot: 
+
+![cucumber](img/cucumber.png)
+
+# Docker
+
+Add a dockerfile first: <https://github.com/nanoix9/sdm2019-ass1b/tree/master/Dockerfile>
+
+build docker image:
+
+    docker build -t stone/sdm-ass1b .
+
+run docker container:
+
+    docker run -p 3000:3000 --rm stone/sdm-ass1b
+
+screenshot:
+
+![docker](img/docker.png)
