@@ -18,9 +18,14 @@ app.get('/', (req, res) => {
 })
 
 app.get('/users', (req, res) => {
-  db.find_all('user', (docs) => {
+  db.find_all('user')
+  .then((docs) => {
     console.debug(docs);
     res.send(docs)
+  })
+  .catch(err => {
+    console.debug('find all error:', err);
+    res.send([]);
   });
 });
 

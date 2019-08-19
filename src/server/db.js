@@ -4,21 +4,32 @@ const MongoClient = require('mongodb').MongoClient
 
 const client = new MongoClient(config.MONGO_URI);
 
-const find_all = (collection_name, callback) => {
-  client.connect((err) => {
-      
-    // Get the documents collection
-    const db = client.db();
-    // console.debug(db)
-    const collection = db.collection(collection_name);
-    // console.debug(collection)
+const find_all = (collection_name) => {
+  return new Promise((resolve, reject) => {
+    client.connect((err) => {
+      if (err) {
+        console.debug('mongodb error: ', err);
+        reject(err);
+        return;
+      }
 
-    // Find some documents
-    collection.find({}).toArray(function(err, docs) {
-      console.log("Found the following records");
-      console.log(docs)
-      callback(docs);
-    });
+      // Get the documents collection
+      const db = client.db();
+      // console.debug(db)
+      const collection = db.collection(collection_name);
+      // console.debug(collection)
+
+      // Find some documents
+      collection.find({}).toArray((err, docs) => {
+        if (err) {
+          reject(err);
+        } else {
+          console.log("Found the following records");
+          console.log(docs)
+          resolve(docs);
+        }
+      });
+    })
   });
 };
 
