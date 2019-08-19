@@ -2,7 +2,7 @@ const config = {
   dev: {
     MONGO_URI: "mongodb://localhost/test",
   },
-  prod: {
+  production: {
     MONGO_URI: "mongodb://localhost/production",
   },
   heroku: {
