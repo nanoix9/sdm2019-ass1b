@@ -4,6 +4,7 @@ NAME=portfolio
 
 pdf:
 	pandoc -s -N \
+		--toc \
 		--pdf-engine=xelatex \
 	 	-f markdown-implicit_figures \
 		-o $(NAME).pdf $(NAME).md
