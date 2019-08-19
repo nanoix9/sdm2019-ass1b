@@ -1,61 +1,92 @@
-# Evidences
+---
+title: Evidences for Assignment 1B
+papersize: a4
+mainfont: Arial
+fontsize: 11pt
+linestretch: 1
+geometry:
+    - margin=25mm
+---
 
-1. VS Code, Git repo on own machine
 
-    screenshot: ![VS Code & Git](img/vscode-git.png)
+# VS Code, Git repo on own machine
 
-2. GitHub repository
+screenshot: 
 
-    link: <https://github.com/nanoix9/sdm2019-ass1b>
+![VS Code & Git](img/vscode-git.png)
+
+# GitHub repository
+
+link: <https://github.com/nanoix9/sdm2019-ass1b>
+
+screenshot: 
+
+![](img/github.png)
+
+# Gitflow branching configuration
+
+link: <https://github.com/nanoix9/sdm2019-ass1b/branches/all>
+
+screenshot: 
+
+![](img/gitflow.png)
+
+# pull request function of GitHub
+
+link:
+
+- <https://github.com/nanoix9/sdm2019-ass1b/pulls?q=is%3Apr+is%3Aclosed>
+- <https://github.com/nanoix9/sdm2019-ass1b/pull/1>
+
+screenshots:
+
+succeeded: 
+
+![succeeded](img/pullrequest.png)
+
+rejected: 
+
+![rejected](img/pullrequest-rejected.png)
+
+# TravisCI
+
+link: <https://github.com/nanoix9/sdm2019-ass1b/blob/master/.travis.yml>
+
+screenshot: 
+
+![travis-ci-job](img/travis-ci-job.png)
+
+# Node.js, React, express.js and MongoDB
+
+- node.js: <https://github.com/nanoix9/sdm2019-ass1b/blob/master/package.json>
+- react: <https://github.com/nanoix9/sdm2019-ass1b/blob/master/src/app/app.jsx>
+- express: <https://github.com/nanoix9/sdm2019-ass1b/blob/master/src/index.js>
+- mongodb: <https://github.com/nanoix9/sdm2019-ass1b/blob/master/src/server/db.js>
+
+screenshot: 
+
+![web-app](img/web-app.png)
+
+# Mocha and Chai
+
+link: <https://github.com/nanoix9/sdm2019-ass1b/blob/master/test/test.js>
+
+screenshot: 
+
+![mocha-chai](img/mocha-chai.png)
     
-    screenshot: ![](img/github.png)
-
-3. Gitflow branching configuration
-
-    link: <https://github.com/nanoix9/sdm2019-ass1b/branches/all>
-
-    screenshot: ![](img/gitflow.png)
-
-4. pull request function of GitHub
-
-    link:
-
-    - <https://github.com/nanoix9/sdm2019-ass1b/pulls?q=is%3Apr+is%3Aclosed>
-    - <https://github.com/nanoix9/sdm2019-ass1b/pull/1>
-
-    screenshots:
-
-    succeeded: ![succeeded](img/pullrequest.png)
-
-    rejected: ![rejected](img/pullrequest-rejected.png)
-
-5. TravisCI
-
-    link: <https://github.com/nanoix9/sdm2019-ass1b/blob/master/.travis.yml>
-
-6. node.js, React, express.js and MongoDB
-
-    - node.js: <https://github.com/nanoix9/sdm2019-ass1b/blob/master/package.json>
-    - react: <>
-    - express: <https://github.com/nanoix9/sdm2019-ass1b/blob/master/src/index.js>
-    - mongodb: <>
-
-7. Mocha and Chai
-
-    screenshot: ![mocha-chai](img/mocha-chai.png)
+# Deployment to Heroku
     
-8. Heroku to deploy your production code
-    
-    link: <https://lit-beyond-33040.herokuapp.com>
+link: <https://lit-beyond-33040.herokuapp.com>
 
-    screenshot: ![heroku-deploy](img/heroku-deploy.png)
+screenshot: 
 
-9. Cucumber for automated acceptance testing.
+![heroku-deploy](img/heroku-deploy.png)
 
-    screenshot: ![cucumber](img/cucumber.png)
+# Cucumber
 
-10. Containers 
+link: <https://github.com/nanoix9/sdm2019-ass1b/tree/master/features>
 
-    not finish
+screenshot: 
 
-11. use Datadog to monitor (log) the behaviour of the application after deployment
+![cucumber](img/cucumber.png)
