@@ -8,7 +8,7 @@ const find_all = (collection_name, callback) => {
   client.connect((err) => {
       
     // Get the documents collection
-    const db = client.db(config.MONGO_DB);
+    const db = client.db();
     // console.debug(db)
     const collection = db.collection(collection_name);
     // console.debug(collection)
